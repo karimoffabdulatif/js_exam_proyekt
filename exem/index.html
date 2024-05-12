@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Example</title>
+    <link rel="stylesheet" href="sass/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <p class="nav_tittle">Assalomu aleykum</p>
+      </nav>
+
+      <sidebar class="main-menu">
+        <img
+          src="img/airplane_logo.png"
+          alt="airplane_icon"
+          class="sidebar_icon1"
+        />
+        <button class="sidebar_btn" id="buy_btn">Bilet sotib olish</button>
+
+        <img src="img/api_logo.png" alt="sidebar_icon" class="sidebar_icon2" />
+        <button class="sidebar_btn"><a class="sidebar_btn_link" href="./reys.html">API ga o'tish</a></button>
+      </sidebar>
+    </header>
+
+    <main>
+      <div class="container">
+        <section id="data_pages">
+          <h2>Ma'lumotlar Jadvali</h2>
+        <table id="infoTable">
+            <thead>
+              <tr>
+                <th>Turgan joyi</th>
+                <th>Bormoqchi bo'lgan manzili</th>
+                <th>Sana</th>
+                <th>Yoshi</th>
+                <th>Yosh bolalar soni</th>
+                <th>To'lov usuli</th>
+              </tr>
+            </thead>
+
+            <tbody id="tableBody">
+            </tbody>
+
+          </table>
+        </section>
+
+
+        <form class="regist" id="regis">
+          
+          <div class="regis_nav">
+            <img
+              src="img/ayirways_logo.jpg"
+              alt="logo_airways"
+              class="airways_logo"
+            />
+            <div class="nav_bar">
+              <ul class="regist_nav_lists">
+                <li class="links">
+                  <a href="#" class="regist_nav_links_1">Qidirish</a>
+                </li>
+                <li class="links">
+                  <a href="#" class="regist_nav_links">Qo'shimcha xizmatlar</a>
+                </li>
+                <li class="links">
+                  <a href="#" class="regist_nav_links">Chiptani qaytarish</a>
+                </li>
+                <li class="links">
+                  <a href="#" class="regist_nav_links">UzAirPlus</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="registr_tittle">
+            Bormoqchi bo'lgan viloyatingizni kiriting
+          </p>
+
+          <div>
+            <select  class="where" id="where">
+              <option disabled>Turgan joyingizni tanlang</option>
+              <option value="Andijon">Andijon</option>
+              <option value="Farg'ona">Farg'ona</option>
+              <option value="Namangan">Namangan</option>
+              <option value="Toshkent">Toshkent</option>
+              <option value="Sirdaryo">Sirdaryo</option>
+              <option value="Jizzah">Jizzah</option>
+              <option value="Samarqand">Samarqand</option>
+              <option value="Qashqadaryo ">Qashqadaryo</option>
+              <option value="Surxondaryo">Surxondaryo</option>
+              <option value="Buxoro ">Buxoro</option>
+              <option value="Xorazm">Xorazm</option>
+              <option value="Qoraqalpog'iston Respublikasi">Qoraqalpog'iston Respublikasi</option>
+            </select>
+          </div>
+
+          <div>
+            <select class="where_to" id="where_to">
+              <option disabled>Bormoqchi bo'lgan viloyatingiz</option>
+              <option value="Andijon">Andijon</option>
+              <option value="Farg'ona">Farg'ona</option>
+              <option value="Namangan">Namangan</option>
+              <option value="Toshkent">Toshkent</option>
+              <option value="Sirdaryo">Sirdaryo</option>
+              <option value="Jizzah">Jizzah</option>
+              <option value="Samarqand">Samarqand</option>
+              <option value="Qashqadaryo">Qashqadaryo</option>
+              <option value="Surxondaryo">Surxondaryo</option>
+              <option value="Buxoro">Buxoro</option>
+              <option value="Xorazm">Xorazm</option>
+              <option value="Qoraqalpog'iston Respublikasi">Qoraqalpog'iston Respublikasi</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="start"></label>
+            <input
+              type="date"
+              id="d_m_y"
+              name="trip-start"
+              value="date"
+              min="date"
+              max="date"
+              class="date_input"
+            />
+          </div>
+
+          <div>
+            <p class="age_tittle">12 yoshdan katta</p>
+            <input type="number" id="age" placeholder="Yoshingizni kiring" class="age" />
+
+            <p class="middle_age">2-12 yosh (Joyi bilan)</p>
+            <input type="text" id="childs" placeholder="Bolalar" class="input_middle_age" />
+
+            <select class="paymod" id="paymond">
+              <option>To'lov turini tanlang</option>
+              <option>Naqt pul</option>
+              <option>UzCard</option>
+              <option>Humo</option>
+            </select>
+          </div>
+
+          <button class="submit_btn" type="submit">
+            Ma'lumotlarni tasdiqlash
+          </button>
+          <button class="exit_btn" id="exit_btn">Saqlangan ma'lumotlar</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

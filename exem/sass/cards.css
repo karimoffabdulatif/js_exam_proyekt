@@ -1,0 +1,39 @@
+.cards__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1140px;
+  padding: 0 16px;
+  margin: 0 auto;
+  
+}
+
+@media (max-width: 448px){
+  .cards__wrapper{
+    margin-left: 87px;
+  }
+
+}
+
+.cards__wrapper .card {
+  width: 300px;
+  text-align: center;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+
+@media (max-width: 448px){
+  .cards__wrapper .card{
+    width: 220px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+  }
+
+

@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import "../styless/main/main";
+@import "../styless/navbar/nav";
+@import "../styless/sidebar/sidebar";
+
+
+
+*{
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/sly_and_claud.jpg);
+    background-position: center;
+}
+
+.container {
+    max-width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+}
